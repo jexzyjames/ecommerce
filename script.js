@@ -16,7 +16,7 @@ var btn = document.querySelector("#btn");
 var update = document.querySelector("#update");
 var zero = document.querySelector("#zero");
 var Show = document.querySelector("#Show");
-
+var dollar = document.querySelector(".dollar");
 
 menu.addEventListener("click", function(){
     tog.classList.toggle("down");
@@ -132,6 +132,7 @@ const slide = [
 
 
     let count = 0;
+    let price = 125;
         
 order.onclick = function(){
     if(true){
@@ -174,6 +175,7 @@ all.forEach( function(each){
         count++;
         update.innerHTML = count;
         zero.innerHTML = count;
+        dollar.innerHTML = price x count;
     console.log(count);
 
     })
@@ -182,6 +184,7 @@ all.forEach( function(each){
         count--;
         update.innerHTML = count ;
         zero.innerHTML = count ;
+        dollar.innerHTML = "$" + price x count;
     console.log(count);
 
     })
