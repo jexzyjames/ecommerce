@@ -19,6 +19,9 @@ body{
 html{
     box-sizing: border-box;
 }
+.buttons{
+    display: none;
+}
 .show{
     display: none;
         position: absolute;
@@ -62,6 +65,7 @@ html{
     position: absolute;
     right: 10px;
     width: 30px;
+    cursor: pointer;
     height: auto;
 }
 .info{
@@ -71,6 +75,7 @@ html{
     position: relative;
     gap: 20px;
 }
+
 .show img{
     width: 40px;
     border-radius: 10px;
@@ -100,7 +105,7 @@ html{
 
 .avatar {
     cursor: pointer;
-    width: fit-content;
+    width: 30px;
     position: relative;
     height: 20px;
 }
@@ -110,9 +115,10 @@ html{
 
 .product{
     display: flex;
+    justify-content: space-between;
     /* width: 100%; */
     /* overflow: hidden; */
-    /* gap: 70px; */
+    gap: 70px;
     margin:auto ;
     padding: 180px 12%;
 }
@@ -250,6 +256,7 @@ b{
     border: 0;
     border-radius: 10px;
     outline: 0;
+    cursor: pointer;
     width: 100%;
     color: var(--White);
     font-weight: 700;
@@ -261,10 +268,12 @@ b{
 }
 .minus{
     width: 10px;
+    cursor: pointer;
     height: 3px;
 }
 .plus{
     width: 10px;
+    cursor: pointer;
     height: 9px;
 }
 .btn{
@@ -281,6 +290,7 @@ b{
     margin-right: 6px;
     width: 14px;
     color: var(--White) !important;
+    cursor: pointer;
     font-weight: 900;
 }
  .float {
@@ -302,6 +312,7 @@ b{
  .avatar {
      cursor: pointer;
      width: fit-content;
+     width: 20px;
      position: relative;
      height: 20px;
  }
@@ -336,9 +347,43 @@ b{
     border: 4px solid red;
     opacity: .5;
  }
-
+ .update{
+    /* content: '1'; */
+    position: absolute;
+    top: -4px;
+    right: 60%;
+    border-radius: 100%;
+    width: 10px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    background-color: var(--Orange);
+    color: white;
+}
+#update{
+    color: brown;
+}
 
 @media (max-width:850px) {
+    
+    #show{
+        position: absolute;
+        top: -4px;
+        right: 60%;
+        border-radius: 100%;
+        width: 10px;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+        background-color: var(--Orange);
+        color: white;
+    }
     .scroll{
         display: none;
     }
@@ -375,9 +420,13 @@ b{
     }
     .avatar{
         cursor: pointer;
-        width: fit-content;
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
         height: 20px;
+        /* width: fit-content; */
 }
 .show{
     display: none;

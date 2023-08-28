@@ -23,7 +23,7 @@
             <div class="info">
                 <img class="small"  src="image-product-1-thumbnail.jpg" alt="">
                 <h3 class="h3">Fall Limited Edition Sneakers <br>
-                    $125.00 x 3 <span class="dark">$375.00</span>
+                    $125.00 x <span id="update"></span> <span class="dark">$375.00</span>
                     <b class="delete"><img src="icon-delete.svg" alt=""></b>
                 </h3>
             </div>
@@ -38,7 +38,7 @@
         </div>
         <div class="float">
             <img class="order" src="icon-cart.svg" alt="">
-           
+           <div id="Show" class="update"></div>
             <img class="avatar" src="image-avatar.png" alt="">
         </div>
         
@@ -51,8 +51,8 @@
             <!-- <div class="prev" id="prev">
             <img src="icon-previous.svg" alt="">
             </div> -->
-            <a href="#" class="prev" id="prev"><</a>
-            <a href="#" class="next" id="next">></a>
+            <span class="buttons" href="#" class="prev" id="prev"> < </span>
+            <span class="buttons" href="#" class="next" id="next">></span>
             <!-- <div class="next" id="next">
             <img src="icon-next.svg" alt="">
             </div> -->
@@ -86,14 +86,14 @@
                 <span class="span">$250.00</span></h1>
                 <div class="add">
                     <div class="change">
-                    <img class="minus" src="icon-minus.svg" alt="">
-                    <div class="zer0">0</div>
-                    <img class="plus" src="icon-plus.svg" alt="">
+                    <img id="minus" class="minus" src="icon-minus.svg" alt="">
+                    <div id="zero" class="zero">0</div>
+                    <img id="plus" class="plus" src="icon-plus.svg" alt="">
                     </div>
                 <div class="addition">
                         <button id="btn">
                     
-                        <img class="cart" src="icon-cart.svg" alt="">
+                        <img id="cart" class="cart" src="icon-cart.svg" alt="">
                         Add to Cart
                 </button>
                 </div>

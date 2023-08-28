@@ -10,6 +10,12 @@ var del = document.querySelector(".delete");
 var info = document.querySelector(".info");
 var name = document.querySelector("#name");
 var check = document.querySelector(".check");
+var minus = document.querySelector("#minus");
+var plus = document.querySelector("#plus");
+var btn = document.querySelector("#btn");
+var update = document.querySelector("#update");
+var zero = document.querySelector("#zero");
+var Show = document.querySelector("#Show");
 
 
 menu.addEventListener("click", function(){
@@ -125,6 +131,7 @@ const slide = [
         })  
 
 
+    let count = 0;
         
 order.onclick = function(){
     if(true){
@@ -161,4 +168,26 @@ all.forEach( function(each){
     
     })
 })
+
+
+    plus.addEventListener('click', ()=>{
+        count++;
+        update.innerHTML = count;
+        zero.innerHTML = count;
+    console.log(count);
+
+    })
+
+    minus.addEventListener('click', ()=>{
+        count--;
+        update.innerHTML = count ;
+        zero.innerHTML = count ;
+    console.log(count);
+
+    })
+btn.addEventListener('click', ()=>{
+    Show.innerHTML = count ;
+
+})
+
 
