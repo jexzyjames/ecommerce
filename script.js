@@ -175,7 +175,7 @@ all.forEach( function(each){
         count++;
         update.innerHTML = count;
         zero.innerHTML = count;
-        dollar.innerHTML = "$" + price x count;
+        dollar.innerHTML = "$" + price * count;
     console.log(count);
 
     })
@@ -184,7 +184,7 @@ all.forEach( function(each){
         count--;
         update.innerHTML = count ;
         zero.innerHTML = count ;
-        dollar.innerHTML = "$" + price x count;
+        dollar.innerHTML = "$" + price * count;
     console.log(count);
 
     })
